@@ -1,0 +1,44 @@
+body {
+	background: #F6F8F8;
+}
+
+body > .container:first-child {
+	margin-top: 20px;
+}
+
+h1 {
+	font-weight: normal;
+	margin-bottom: 30px;
+	font-style: italic;
+}
+
+p.tag {
+	margin-bottom: 40px;
+}
+
+p.tag > span {
+	text-decoration: line-through;
+}
+
+img.loading {
+	margin: 0px auto;
+	display: block;
+}
+
+.navbar-brand > img {
+	height: 18px;
+	position: relative;
+	top: -2px;
+}
+
+.navbar-nav > li > a {
+	font-weight: normal;
+}
+
+hr {
+	border-top: 3px dashed #ddd;
+}
+
+form.domainBar {
+	margin-bottom: 40px;
+}
