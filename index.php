@@ -33,7 +33,9 @@ if (defined('ENVIRONMENT'))
 	switch (ENVIRONMENT)
 	{
 		case 'development':
-			error_reporting(E_ALL);
+		error_reporting(E_ALL);
+		ini_set('display_errors', 1);
+		ini_set('memory_limit', '-1');
 		break;
 	
 		case 'testing':

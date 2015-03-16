@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Online Database Software - Database UI | Databased SERVER Edition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="Databased is self-hosted online database software which turns any MySQL database into a beautifull online application">
+        <meta name="keywords" content="Databased, Databased App, Online Database Software, Online Database Application, Relational Database Application, Database UI">
+
+        <!-- The main CSS file -->
+        <link href="css/main.css" rel="stylesheet">
+
+        <!-- CSS file for your custom modifications -->
+        <link href="css/custom.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='//v2.zopim.com/?1wEq8orZ8wMMsNxYAjNrCUPG4McYlWW6';z.t=+new Date;$.
+        type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+        </script>
+        <!--End of Zopim Live Chat Script-->
+    </head>
+  
+    
+    <!-- Scrollspy set in the body -->
+    <body id="home" data-spy="scroll" data-target=".main-nav" data-offset="73">
+
+    <!--///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////-->
+
+    <!-- image is set in the CSS as a background image -->
+    <div id="parallax"></div>
+
+    <!--///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+
+
+    
+    <!--/////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+
+    <section id="header">
+
+        <nav class="navbar navbar-fixed-top" role="navigation">
+
+            <div class="navbar-inner">
+                <div class="container">
+
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navigation"></button>
+
+                    <!-- Logo goes here - replace the image with yours -->
+                    <a href="index.html" class="navbar-brand"><img src="images/logo_.png" class="logo-img img-responsive" alt="Databased Logo" title="Databased Logo"></a>
+
+
+                    <div class="collapse navbar-collapse main-nav" id="navigation">
+
+
+                        <ul class="nav pull-right">
+
+                            <!-- Menu items go here -->
+                            <li class="active hidden"><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#faq">FAQ/Contact</a></li>
+                            <li><a href="doc.html">Docs</a></li>
+                            <li>
+                            	<a href="http://codecanyon.net/item/database-application-platform/6957496?ref=chilly_orange" target="_blank"><span class="label label-primary"><span class="fui-exit"></span> Buy at CodeCanyon</span></a>
+                            </li>
+        
+                            <!-- If you want sub-menu items, do them like this
+                            <li>
+                                <ul>
+                                  <li><a href="#">Item 1</a></li>
+                                  <li><a href="#">Item 2</a></li>
+                                </ul>
+                            </li> 
+                            You just need to delete these comment lines -->
+                        </ul>
+
+                    </div><!-- /nav-collapse -->
+                </div><!-- /container -->
+            </div><!-- /navbar-inner -->
+        </nav>
+
+    </section>
+
+    <!--//////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+
+    
+
+    <!--/////////////////////////////////////// HERO SECTION ////////////////////////////////////////-->
+
+    <section id="hero">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 intro">
+                	<div class="tooldummy">
+                		<!--<p data-toggle="tooltip" data-tooltip-style="light" data-html="true" data-placement="top" title="Databased Server Edition requires a VPS or dedicated server.<br> <a href='/personal/' class='btn btn- btn-sm btn-inverse btn-block' style='margin-top: 10px'><b>Looking for Databased Personal Edition?</b></a>"></p>-->
+                		<p data-toggle="tooltip" data-tooltip-style="light" data-html="true" data-placement="top" title="Databased Server Edition requires a VPS or dedicated server. <a href='/personal'><b>Looking for Databased Personal Edition?</b></a>"></p>
+                	</div>
+                    <img src="images/logo.png" alt="Databased Logo" title="Databased Logo">
+                    <p class="lead">Put a friendly face on your MySQL Database!</p>
+                    <a href="/demo" target="_blank" class="btn btn-hg btn-inverse btn-embossed">
+                    	<span class="fui-window"></span>
+                    	Live Demo
+                    </a>
+                    <a href="http://codecanyon.net/item/database-application-platform/6957496?ref=chilly_orange" target="_blank" class="btn btn-hg btn-primary btn-embossed inline">
+                    	<span class="fui-credit-card"></span>
+                    	Buy Online for <b>$33</b>*
+                    </a>
+                    <p class="small text-left"><b>* Buy once, own forever! No monthly fees, unlimited updates</b></p>
+                                        
+                </div>
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+
+    <!--///////////////////////////////////////////////// end HERO SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// FEATURES SECTION ////////////////////////////////////////-->
+
+    <section id="features">
+
+        <div class="container">
+
+            <header>
+                <h1>Databased Features</h1>
+                <p class="lead">
+                Everything you need to turn any MySQL database<br>
+                into a user friendly online application!</p>
+            </header>
+
+            <div class="row">
+                
+                <!-- Feature Item 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/ballicons/SVG/settings.svg" alt="" title="" />
+                    </div>
+                    <h4>Simple Setup</h4>
+                    <p>Turn any existing or new database into a user friendly data application.</p>
+                </div>
+
+                <!-- Feature Item 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/dude.svg" alt="" title="" />
+                    </div>
+                    <h4>Role Based Permissions</h4>
+                    <p>Role based permissions using MySQL users allowing for strict data control.</p>
+                </div>
+
+                <!-- Feature Item 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/pencil.svg" alt="" title="" />
+                    </div>
+                    <h4>Version Control</h4>
+                    <p>Version control for your entire database; restore anything, anytime!</p>
+                </div>
+
+            </div><!-- /row -->
+            
+			<div class="row">
+                
+                <!-- Feature Item 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/file.svg" alt="" title="" />
+                    </div>
+                    <h4>Data Imports</h4>
+                    <p>Import CSV files to built new tables or add data to existing tables.</p>
+                </div>
+
+                <!-- Feature Item 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/map.svg" alt="" title="" />
+                    </div>
+                    <h4>Relational Data Support</h4>
+                    <p>Support for relational data and foreign keys, making relations a breeze!</p>
+                </div>
+
+                <!-- Feature Item 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <img src="images/icons/retina.svg" alt="" title="" style="width: 190px;" />
+                    </div>
+                    <h4>Beautiful & User Friendly</h4>
+                    <p>Beautiful and user-friendly design, fully retina ready!</p>
+                </div>
+
+            </div><!-- /row -->
+            
+        </div><!-- /container -->
+
+    </section>
+
+    <!--/////////////////////////////////////// end FEATURES SECTION ////////////////////////////////////////-->
+
+
+    <!--//////////////////////////////////////// NEWSLETTER SECTION ////////////////////////////////////////-->
+
+    <section id="newsletter">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <p class="lead">Receive Databased news & updates</p>
+                </div>
+                
+                <div class="col-md-6">
+
+                    <!--////////// Newsletter Form //////////-->
+                    <form id="newsletter-signup" method="post" action="//sent.chillyorange.com/api/hJP8BFSb3P8uYhnZzZtW">
+                    	<input type="hidden" name="_subject" value="Databased: mailing list subscription">
+                    	<input type="hidden" name="_confirmation" value="Thanks for subscribing to our mailing list.">
+                    	<input type="text" name="_honey" value="" style="display:none">
+                        <div class="input-group">
+                          <input type="text" name="e-mail" id="e-mail" class="form-control input-hg">
+                          <span class="input-group-btn">
+                            <button class="btn btn-inverse btn-hg" type="submit" name="submit">Sign Up</button>
+                          </span>
+                        </div><!-- /input-group -->
+                    </form>
+                    <!--////////// end of Newsletter Form ///////////-->
+
+                     <div id="error-info"></div><!-- Error notification for newsletter signup form -->
+
+                </div>
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+    
+    <!--//////////////////////////////////////// end NEWSLETTER SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// INFO SECTION ////////////////////////////////////////-->
+
+    <section id="info">
+
+        <!--/////////// Info section alternates with white and gray backgrounds. Let's start with a white! //////////-->
+        <div class="info-section-gray" id="databases">
+
+            <div class="container">
+                <div class="row">
+
+					<div class="col-md-6">
+
+                        <!--////////// CAROUSEL SLIDER //////////-->
+
+                        <!-- declaring the carousel slides -->
+                        <div id="myCarousel1" class="carousel bordered slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- The carousel items themselves -->
+                            <div class="carousel-inner">
+                            
+                                <!--////////// Carousel Item 1 //////////-->
+                                <div class="active item gallery-popup">
+                                    <a href="images/slideshow_1/manage-databases-1.png"><img src="images/slideshow_1/manage-databases-1.png" alt="Manage Databases" title="placeholder image" class="img-responsive"></a>
+                                </div>
+                                <div class="item gallery-popup">
+                                    <a href="images/slideshow_1/manage-databases-2.png"><img src="images/slideshow_1/manage-databases-2.png" alt="Manage Databases" title="placeholder image" class="img-responsive"></a>
+                                </div>
+                                <!--////////// end of Carousel Item 1 //////////-->
+
+                                <!--////////// Carousel Item 2 //////////-->
+                                <div class="item gallery-popup">
+                                    <a href="images/slideshow_1/manage-databases-3.png"><img src="images/slideshow_1/manage-databases-3.png" alt="Manage Databases" title="placeholder image" class="img-responsive"></a>
+                                </div>
+                                <!--////////// end of Carousel Item 2 //////////-->
+                          
+                            </div>
+
+                          <!-- Carousel navigation arrows -->
+                          <a class="carousel-control left" href="#myCarousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                          <a class="carousel-control right" href="#myCarousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+
+                    </div>
+                    <!--////////// end of CAROUSEL SLIDER //////////-->
+
+                    <div class="col-md-6 pull-left">
+                        <h3>Create new databases or manage existing ones</h3>
+                        
+                        <p>
+                        	Use Databased to manage existing databases (essentially creating a back-end system for existing data applications) or simply create new databases. Databased will indicate wether or not an existing database can be added.
+                        </p>
+                        
+                        <p>
+                        	Databased can be removed disabled from Databased at any given moment, all the meta data (revisions, notes, etc) will remain in Databased and will be applied again once the database is enabled again.
+                        </p>
+                        
+                        <a href="/demo" target="_blank" class="btn btn-inverse"><span class="fui-window"></span> Try The Demo</a>
+                        <a href="#spreadsheets" class="btn btn-danger"><span class="fui-info"></span> Learn More</a>
+
+                    </div> 
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </div><!-- /info-section-gray -->
+        
+        <div class="info-section-white" id="dataimports">
+        
+                    <div class="container">
+                        <div class="row">
+                        
+      						<div class="col-md-6">
+      	                        <h3>Import data</h3>
+      	                        
+      	                        <p>
+      	                        	Use the Databased data import feature to import data from your computer to create new tables or to add data to existing ones!
+      	                        </p>
+      	                        
+      	                        <p>
+      	                        	Databased accepts files in CSV format, allowing you to import data from a wide range of source such as MySQL databases, Excel, Numbers, etc. 
+      	                        </p>
+      	                        
+      	                        <a href="/demo" target="_blank" class="btn btn-inverse"><span class="fui-window"></span> Try The Demo</a>
+      	                        <a href="#spreadsheets" class="btn btn-danger"><span class="fui-info"></span> Learn More</a>
+      	
+      	                    </div> 
+        
+        					<div class="col-md-6 pull-left">
+        
+                                <!--////////// CAROUSEL SLIDER //////////-->
+        
+                                <!-- declaring the carousel slides -->
+                                <div id="myCarousel12" class="carousel bordered slide">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel12" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel12" data-slide-to="1"></li>
+                                    </ol>
+        
+                                    <!-- The carousel items themselves -->
+                                    <div class="carousel-inner">
+                                    
+                                        <!--////////// Carousel Item 1 //////////-->
+                                        <div class="active item gallery-popup">
+                                            <a href="images/slideshow_4/import-data-1.jpg"><img src="images/slideshow_4/import-data-1.jpg" alt="Import data" title="placeholder image" class="img-responsive"></a>
+                                        </div>
+                                        <div class="item gallery-popup">
+                                            <a href="images/slideshow_4/import-data-2.jpg"><img src="images/slideshow_4/import-data-2.jpg" alt="Import data" title="placeholder image" class="img-responsive"></a>
+                                        </div>
+                                        <!--////////// end of Carousel Item 1 //////////-->
+        
+                                  
+                                    </div>
+        
+                                  <!-- Carousel navigation arrows -->
+                                  <a class="carousel-control left" href="#myCarousel12" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                                  <a class="carousel-control right" href="#myCarousel12" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                </div>
+        
+                            </div>
+                            <!--////////// end of CAROUSEL SLIDER //////////-->
+                            
+                        </div><!-- /row -->
+                    </div><!-- /container -->
+        
+                </div><!-- /info-section-gray -->
+                
+        <!--/////////// And here's the gray background section! //////////-->
+        <div class="info-section-gray" id="spreadsheets">
+            
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-md-6 gallery-popup">
+                        <a href="images/slideshow_1/online-spreadsheet-app.png"><img src="images/slideshow_1/online-spreadsheet-app.png" alt="Online Spreadsheet App" title="placeholder image" class="img-responsive" style="border: 1px solid #fff; box-shadow: 0px 0px 10px rgba(0,0,0,0.2);"></a>
+                    </div> 
+                    <!--////////// end of CAROUSEL SLIDER //////////-->
+                    
+					<div class="col-md-6 pull-right">
+					
+                        <h3>Online Spreadsheets</h3>
+                        
+                        <p class="lead">Allow users to take their data online by creating stunning online spreadsheets</p>
+
+                        <p>Need to share data with your colleagues on customers? Databased allows users to create either simple and basic spreadsheets or complex relational spreadsheets online!</p>
+                        
+                        <p>
+                        	Databased uses a design and layout to make people familiar with spreadsheet software (like MS Excel) right at home!
+                        </p>
+                        
+                        <a href="/demo" target="_blank" class="btn btn-inverse"><span class="fui-window"></span> Try The Demo</a>
+                        <a href="#users" class="btn btn-danger"><span class="fui-info"></span> Learn More</a>
+                        
+                    </div>
+                                   
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </div><!-- /info-section-white -->
+
+		<div class="info-section-white" id="users">
+
+            <div class="container">
+                <div class="row">
+                
+					<div class="col-md-6">
+                    
+                        <h3>User & Permission Managament</h3>
+                        
+                        <p class="lead">Databased allows for role based user and permission management, allowing total control over who gets to do what and see what</p>
+                        
+                        <p>
+                        	Setup user roles to define access to databases and tables. Databased integrates seamless with MySQL's native user and permission handling.
+                        </p>
+                        
+                        <p>
+                        	Databased allows for unlimited user roles and user accounts, allowing the app to grow with your organisation or business.
+                        </p>
+                        
+                        <a href="/demo" target="_blank" class="btn btn-inverse"><span class="fui-window"></span> Try The Demo</a>
+                        <a href="#version-control" class="btn btn-danger"><span class="fui-info"></span> Learn More</a>
+
+                    </div> 
+
+					<div class="col-md-6 pull-left">
+
+                        <!--////////// CAROUSEL SLIDER //////////-->
+
+                        <!-- declaring the carousel slides -->
+                        <div id="myCarousel2" class="carousel bordered slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                <li data-target="#myCarousel2" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- The carousel items themselves -->
+                            <div class="carousel-inner">
+                            
+                                <!--////////// Carousel Item 1 //////////-->
+                                <div class="active item gallery-popup">
+                                    <a href="images/slideshow_2/users-and-permissions-1.png"><img src="images/slideshow_2/users-and-permissions-1.png" alt="Users and permissions" title="Users and permissions" class="img-responsive"></a>
+                                </div>
+                                <div class="item gallery-popup">
+                                    <a href="images/slideshow_2/users-and-permissions-2.png"><img src="images/slideshow_2/users-and-permissions-2.png" alt="Users and permisions" title="Users and permissions" class="img-responsive"></a>
+                                </div>
+                                <!--////////// end of Carousel Item 1 //////////-->
+
+                                <!--////////// Carousel Item 2 //////////-->
+                                <div class="item gallery-popup">
+                                    <a href="images/slideshow_2/users-and-permissions-3.png"><img src="images/slideshow_2/users-and-permissions-3.png" alt="Users and permissions" title="Users and permissions" class="img-responsive"></a>
+                                </div>
+                                <!--////////// end of Carousel Item 2 //////////-->
+                          
+                            </div>
+
+                          <!-- Carousel navigation arrows -->
+                          <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                          <a class="carousel-control right" href="#myCarousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+
+                    </div>
+                    <!--////////// end of CAROUSEL SLIDER //////////-->
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </div><!-- /info-section-white -->
+        
+		<div class="info-section-gray" id="version-control">
+            
+            <div class="container">
+                <div class="row">
+                
+					<div class="col-md-6 gallery-popup">
+                        
+						<!--////////// CAROUSEL SLIDER //////////-->
+
+                        <!-- declaring the carousel slides -->
+                        <div id="myCarousel3" class="carousel bordered slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel3" data-slide-to="1"></li>
+                            </ol>
+
+                            <!-- The carousel items themselves -->
+                            <div class="carousel-inner">
+                            
+                                <!--////////// Carousel Item 1 //////////-->
+                                <div class="active item gallery-popup">
+                                    <a href="images/slideshow_3/database-version-control-1.png"><img src="images/slideshow_3/database-version-control-1.png" alt="Database version control" title="Database version control" class="img-responsive"></a>
+                                </div>
+                                <div class="item gallery-popup">
+                                    <a href="images/slideshow_3/database-version-control-2.png"><img src="images/slideshow_3/database-version-control-2.png" alt="Database version control" title="Database version control" class="img-responsive"></a>
+                                </div>
+                                <!--////////// end of Carousel Item 1 //////////-->
+                          
+                            </div>
+
+                          <!-- Carousel navigation arrows -->
+                          <a class="carousel-control left" href="#myCarousel3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                          <a class="carousel-control right" href="#myCarousel3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        
+                    </div> 
+                    <!--////////// end of CAROUSEL SLIDER //////////-->
+                
+					<div class="col-md-6 pull-right">
+					
+                        <h3>Version Control</h3>
+                        
+                        <p class="lead">No need to worry about users messing up the database; version control will make your live easier!</p>
+
+                        <p>Whenever changes are made to a cell or record, the previous values are stored and can be restored at any given moment</p>
+                        
+                        <p>
+                        	Revisions are tracked for both individual cells and for entire records and stored with dates, making it easy to find previous values.
+                        </p>
+                        
+                        <a href="/demo" target="_blank" class="btn btn-inverse"><span class="fui-window"></span> Try The Demo</a>
+                        
+                    </div>
+                    
+                                   
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </div><!-- /info-section-white -->
+        
+    </section>
+
+    <!--/////////////////////////////////////// end INFO SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// TESTIMONIALS SECTION ////////////////////////////////////////-->
+
+    <section id="testimonials">
+
+        <div class="container">
+            <div class="row">
+
+                <!--////////// Another Carousel Slider //////////-->
+                <div id="testimonials-slider" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonials-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonials-slider" data-slide-to="1"></li>
+                        <li data-target="#testimonials-slider" data-slide-to="2"></li>
+                    </ol>
+                    
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                    
+                        <!-- Testimonial 1 -->
+                        <div class="active item">
+
+                            <div class="col-md-2 col-md-offset-1">
+
+                                <div class="quote-icon">
+                                    <img src="images/icons/girl.svg" alt="" title="" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="lead">We love the application and the support we've been getting from Matt. Please keep developing the application and adding features, this will be a winner!</p>
+                                <cite>adventureroadtrips, <a href="http://codecanyon.net/user/adventureroadtrips">CodeCanyon</a></cite>
+                            </div>
+
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="item">
+
+                            <div class="col-md-2 col-md-offset-1">
+
+                                <div class="quote-icon">
+                                    <img src="images/icons/dude.svg" alt="" title="" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="lead">Great application. Easy to install and use. Secure to manage users and permissions. And good service! The developer is very fast with helping me to make the application work. I'm very satisfied. Recommended!</p>
+                                <cite>pettags4less, <a href="http://codecanyon.net/user/pettags4less">CodeCanyon</a></cite>
+                            </div>
+
+                        </div>
+                        
+						<!-- Testimonial 2 -->
+                        <div class="item">
+
+                            <div class="col-md-2 col-md-offset-1">
+
+                                <div class="quote-icon">
+                                    <img src="images/icons/dude.svg" alt="" title="" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="lead">This script by Chilly Orange is above and beyond any database table that we have ever used. At PDMI Publishing, LLC, we believe in innovation and Chilly Orange has done exactly that! The customer service skills we have seen displayed by this company makes an all time record for investment of other products that Chilly Orange comes up with. PDMI Publishing, LLC is honored to have done business with such a company.</p>
+                                <cite><a href="http://www.pdmipublishing.com">PDMI Publishing, LLC</a></cite>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- Carousel navigation arrows -->
+                    <a class="carousel-control left" href="#testimonials-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="carousel-control right" href="#testimonials-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <!--////////// end of Carousel Slider //////////-->
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+
+    <!--/////////////////////////////////////// end TESTIMONIALS SECTION ////////////////////////////////////////-->
+
+
+
+    <!--/////////////////////////////////////// FAQ SECTION ////////////////////////////////////////-->
+
+    <section id="faq">
+
+        <div class="container">
+
+            <header>
+                <h1>F.A.Q.</h1>
+                <p class="lead">You have a question? Someone else might have had the exact same one. Let's find out!</p>
+            </header>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <!--////////// Accordion Toggle //////////-->
+                    <div class="panel-group" id="accordion">
+                     
+                        <!-- PANEL 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Can Databased be used as a replacement for tools like phpMyAdmin?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    	No. Databased is not (yet) a full fledged MySQL administration tool. In it's current form it's simply a tool to allow regular people access to one or more databases.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- PANEL 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    Do I need to install Databased on my server?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    	Yes. Databased is a "self hosted" application, meaning you will have to install it on a server. Fear not though, installation is breeze.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PANEL 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    What are the requirements for using Databased on our server?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Databased has the following server requirements:</p>
+                                    <ul>
+                                    	<li>MySQL (make sure your version of MysQL supports InnoDB/foreign keys if you want to use the relational data features)</li>
+                                    	<li>Root access to your MySQL server</li>
+                                    	<li>PHP 5.1.6 or newer (older versions might work)</li>
+                                    	<li>Apache webserver</li>
+                                    </ul>	
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PANEL 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    Can we use Databased to manage existing databases?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    	Yes, you can. Existing databases can be brought under Databased control simply by activating the database. However, Databased has a few requirements (for example, each table in the database must have a primary key set on the first column in the table) and it will indicate wether or not an existing database can be managed through the app.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- PANEL 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                    Will Databased work on a shared hosting environment?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    	Short answer; probably not. Since Databased will require root access to your MySQL server, running Databased in a shared hosting environment is unlikely to work. This due to the fact that on a shared hosting account, MySQL servers are also often shared and thus it's unlikely that you will have the proper permissions.
+                                    </p>
+                                    <p>
+                                    	Databased works best on a VPS or dedicated server. If you're looking for a cheap (starting at only $5 p/month), but high quality VPS provider, you might want to check out <a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a> (no affiliation).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- PANEL 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                    How do I upgrade from 1.0 to 1.1.1?
+                                    </a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapseSix" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                	<ol>
+                                    	<li>
+                                    		Check your database to see if the table “dbapp_columnrestrictions” exists. If not, execute the following SQL statement:<br>
+                                    		"CREATE TABLE IF NOT EXISTS `dbapp_columnrestrictions` ( `dbapp_columnrestrictions_id` int(11) NOT NULL AUTO_INCREMENT, `dbapp_columnrestrictions_database` varchar(255) NOT NULL, `dbapp_columnrestrictions_table` varchar(255) NOT NULL, `dbapp_columnrestrictions_column` varchar(255) NOT NULL, `dbapp_columnrestrictions_restrictions` text NOT NULL, PRIMARY KEY (`dbapp_columnrestrictions_id`) ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;"
+                                    	</li>
+                                    
+                                    	<li>
+                                    		Update the following folders:<br>
+                                    		– /application (every subfolder except for the /application/config folder) <br>
+                                    		– /css <br>
+                                    		– /js<br>
+                                    	</li>
+                                    </ol>
+                                    <p>
+                                    	That should be it. If you need any help, please shoot me an email at mattijs@chillyorange.com.
+                                	</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                    <!--////////// end of Accordion Toggle //////////-->              
+
+                    <div class="alert">
+                        
+                        <p class="lead text-center">Databased is built with love by Chilly Orange, located in Bangkok, Thailand</p>
+
+                    </div><!-- /alert -->
+
+                </div><!-- /col-md-6 -->
+
+                <div class="col-md-6">
+
+                    <div class="row contact-intro">
+                        <div class="col-md-3 text-right"><img src="images/icons/support.svg" alt="" title="" /></div>
+                        <div class="col-md-9"><p class="lead">Didn't find what you were looking for? Shoot us a line!</p></div>                        
+                    </div>
+
+                    <!--////////// CONTACT FORM //////////-->
+                    <form id="contact-form" method="post" action="//sent.chillyorange.com/api/hJP8BFSb3P8uYhnZzZtW">
+                    	<input type="hidden" name="_subject" value="Databased: contact request">
+                    	<input type="hidden" name="_replyto" value="%email">
+                    	<input type="hidden" name="_confirmation" value="<b>Thanks for contacting us!</b><br>We'll get back to you as soon as possible">
+                    	<input type="text" name="_honey" value="" style="display:none">
+                        <input type="text" id="name" name="name" class="form-control input-hg" placeholder="Your name..." />
+                        <input type="text" id="email" name="email" class="form-control input-hg" placeholder="Your e-mail address..." />
+                        <textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn-inverse btn-hg btn-block" name="submit">Send</button>
+                    </form>
+
+                     <div id="contact-error"></div>
+                    <!--////////// end CONTACT FORM ///////////-->
+
+                </div><!-- /col-md-6-->
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!--/////////////////////////////////////// end FAQ SECTION ////////////////////////////////////////-->
+
+
+
+    <!--//////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+    <section id="footer">
+        <div class="bottom-menu-inverse">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy; 2014 | Databased by <a href="http://chillyorange.com" target="_blank">Chilly Orange</a>.</p>
+                    </div>
+
+                    <!--<div class="col-md-6 social">
+                        <ul class="bottom-icons">
+                            <li>
+                              <a href="#" class="fui-facebook"></a>
+                            </li>
+                             <li>
+                              <a href="#" class="fui-twitter"></a>
+                            </li>
+                             <li>
+                              <a href="#" class="fui-pinterest"></a>
+                            </li>
+                             <li>
+                              <a href="#" class="fui-googleplus"></a>
+                            </li>
+                             <li>
+                              <a href="#" class="fui-dribbble"></a>
+                            </li>
+                             <li>
+                              <a href="#" class="fui-vimeo"></a>
+                            </li>
+                          </ul>                      
+                    </div>-->
+                </div>
+            
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+
+    <!--//////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+
+
+
+    <!--//////////////////////////////////////// JAVASCRIPT LOAD ////////////////////////////////////////-->
+
+    <!-- Feel free to remove the scripts you are not going to use -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="assets/twitter/jquery.tweet.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!--//////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-48786694-1', 'databasedapp.com');
+	  ga('send', 'pageview');
+	
+		$(function(){
+		
+			// Tooltips
+			$("[data-toggle=tooltip]").tooltip({placement: 'top'}).tooltip('show');
+			
+			// Add style class name to a tooltips
+			$(".tooltip").addClass(function() {
+			  if ($(this).prev().attr("data-tooltip-style")) {
+			    return "tooltip-" + $(this).prev().attr("data-tooltip-style");
+			  }
+			});
+
+		})
+	
+	</script>
+  </body>
+</html>

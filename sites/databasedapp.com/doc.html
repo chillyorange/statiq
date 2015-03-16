@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Databased Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="http://getstatiq.com/sites/databasedapp.combootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="http://getstatiq.com/sites/databasedapp.comcss/flat-ui.css" rel="stylesheet">
+    
+    <link href="http://getstatiq.com/sites/databasedapp.comcss/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    #docNav.affix {
+    	top: 20px;
+    	width: 263px;
+    }
+    
+    h1, h2, h3, h4, h5, p {
+    	margin-bottom: 20px;
+    }
+    
+    div > p:last-child, div > ul:last-child {
+    	margin-bottom: 50px;
+    }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#docNav">
+    <div class="container">
+    	
+    	<div class="row">
+    	
+    		<div class="col-md-12">
+    		
+    			<h2 class="text-center" style="margin-bottom: 0px;"><span class="fui-info text-primary"></span> Databased Documentation</h2><br>
+    			
+    			<h4 class="text-center">current version: <span class="label label-primary">1.4.2</span></h4>
+    			
+    			<p class="text-center small">This document can also be found online at <a href="">databasedapp.com/doc.html</a></p>
+    			
+    			<hr>
+    		
+    		</div><!-- /.col-md-12 -->
+    	
+    	</div><!-- /.row -->
+    	
+    	<div class="row">
+    	
+    		<div class="col-md-3">
+    		
+    			<div class="affix" id="docNav" data-spy="affix" data-offset-top="150" data-offset-bottom="0">
+    		
+    			<ul class="nav nav-list nav-list-vivid">
+    				<li class="nav-header"><img alt="" src="images/icons/box.svg" style="width: 18px;"> <b>Databased</b></li>
+    				<li class="active">
+    					<a href="http://getstatiq.com/sites/databasedapp.com#intro">Introduction</a>
+    				</li>
+    				<li>
+    					<a href="http://getstatiq.com/sites/databasedapp.com#upgrading">Upgrading</a>
+    				</li>
+    				<li class="nav-header">Before Installing</li>
+    			  	<li>
+    			    	<a href="http://getstatiq.com/sites/databasedapp.com#requirements">
+    			      		Requirements
+    			    	</a>
+    			  	</li>
+    			  	<li>
+    			    	<a href="http://getstatiq.com/sites/databasedapp.com#structure">
+    			      		Structure
+    			    	</a>
+    			  	</li>
+    			  	<li>
+    			    	<a href="http://getstatiq.com/sites/databasedapp.com#codeigniter">
+    			      		CodeIgniter
+    			    	</a>
+    			  	</li>
+    			  	<li class="divider"></li>
+    			  	<li class="nav-header">Installation</li>
+    			  	<li>
+    			    	<a href="http://getstatiq.com/sites/databasedapp.com#upload">
+    			      		Step1: Upload Files
+    			    	</a>
+    			  	</li>
+    			 	<li>
+    			    	<a href="http://getstatiq.com/sites/databasedapp.com#mysql">
+    			      		Step2: MySQL Database
+    			    	</a>
+    			  	</li>
+    			  	<li>
+    			    	<a href="http://getstatiq.com/sites/databasedapp.com#configuration">
+    			      		Step3: Configuration
+    			    	</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#firstlogin">
+    			  			First time login
+    			  		</a>
+    			  	</li>
+    			  	<li class="nav-header">Features</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#databases">
+    			  	 		Databases
+    			  		</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#tables">
+    			  	 		Tables
+    			  		</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#columns">Columns</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#imports">Data (csv) imports</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#roles-users-permissions">
+    			  	 		Roles, Users and Permissions
+    			  		</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#revisions">
+    			  	 		Revisions
+    			  		</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#relationaldata">
+    			  			Relational Data
+    			  		</a>
+    			  	</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#notes">
+    			  			Notes
+    			  		</a>
+    			  	</li>
+    			  	<li class="nav-header">How do I...?</li>
+    			  	<li>
+    			  		<a href="http://getstatiq.com/sites/databasedapp.com#hdi">Learn how to perform basic tasks</a>
+    			  	</li>
+    			</ul>
+    			
+    			</div><!-- /#docNav -->
+    		
+    		</div><!-- /.col-md-3 -->
+    		
+    		<div class="col-md-9">
+    		
+    			<div id="intro">
+    			
+    				<h4>Introduction</h4>
+    				
+    				<p>
+    					<img alt="" src="images/icons/box.svg" style="width: 18px;"> Databased is a self-hosted database application, allowing access to MySQL databases for non-technical people and technical people alike. With Databased we are trying to make working with MySQL databases easier and available for everyone.
+    				</p>
+    				
+    				<p>
+						Databased is not (yet) a replacement for phpMyAdmin or other MySQL administration tools as it offers only limited functionality mostly required by "regular" users. By "regular" users we mean sales staff, customer service reps, accountants etc.
+					</p>
+					
+					<p>
+						Databased is built using CodeIgniter 2.1.4 and Flat UI Pro.
+					</p>
+    				
+    			</div><!-- /#intro -->
+    			
+    			<div id="upgrading">
+    			
+    				<h4>Upgrading</h4>
+    				
+    				<p>
+    					Below you'll find information on how to upgrade.
+    				</p>
+    				
+    				<b>v1 to v1.1.1</b><br>
+    				
+    				<ul>
+    					<li>
+    						Check your database to see if the table “dbapp_columnrestrictions” exists. If not, execute the following SQL statement:<br>
+    						"CREATE TABLE IF NOT EXISTS `dbapp_columnrestrictions` ( `dbapp_columnrestrictions_id` int(11) NOT NULL AUTO_INCREMENT, `dbapp_columnrestrictions_database` varchar(255) NOT NULL, `dbapp_columnrestrictions_table` varchar(255) NOT NULL, `dbapp_columnrestrictions_column` varchar(255) NOT NULL, `dbapp_columnrestrictions_restrictions` text NOT NULL, PRIMARY KEY (`dbapp_columnrestrictions_id`) ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;"
+    					</li>
+    					<li>
+    						Update the following folders:<br>
+    						– /application (every subfolder except for the /application/config folder) <br>
+    						– /css <br>
+    						– /js<br>
+    					</li>
+    				</ul>
+    				
+    				<b>v1.1.1 to v1.2.1</b>
+    				
+    				<ul>
+    					<li>
+    						Locate the file "v1.1.1-to-v1.2.1.sql" in the /db_upgrade folder and execute the SQL statements in this file to update your main Databased database.
+    					</li>
+    					<li>
+    						Update (overwrite) the following folders:<br>
+    						- /application (every subfolder except for /application/config/)<br>
+    						- /assets<br>
+    						- /css<br>
+    						- /custom<br>
+    						- /js
+    					</li>
+    				</ul>
+    				
+    				<b>v1.2.1 to v1.2.2</b>
+    				
+    				<ul>
+    					<li>
+    						Update (overwrite) the following folders:<br>
+    						- /application (every subfolder except for /application/config/)<br>
+    					</li>
+    				</ul>
+    				
+    				<b>v1.2.2 to v1.3.1</b>
+    				
+    				<ul>
+    					<li>
+    						Update (overwrite) the following folders:<br>
+    						- /application (every subfolder except for /application/config/)<br>
+    						- /css<br>
+    						- /js<br>
+    					</li>
+    					<li>
+    						Create a folder named "<b>tmp</b>" in the root folder of your application (as a sibling of the <b>application</b> folder) and make sure it's writable by the web server (to be sure, you can set the permissions to <b>777</b>).
+    					</li>
+    				</ul>
+    				
+    				<b>v1.3.1 to v1.3.2</b>
+    				
+    				<ul>
+    					<li>
+    						Update (overwrite) the following folders:<br>
+    						- /application (in the folder <b>/application/config/</b> only replace the file "autoload.php")<br>
+    						- /css<br>
+    						- /js<br>
+    					</li>
+    				</ul>
+    				
+    				<b>v1.3.1 to v1.4.1</b>
+    				
+    				<ul>
+    					<li>
+    						Update (overwrite) the following folders and files:<br>
+    						- .htaccess<br>
+    						- /application (every subfolder except for /application/config/)<br>
+    						- /assets<br>
+    						- /css<br>
+    						- /images<br>
+    						- /js<br>
+    					</li>
+    					<li>
+    						Create a new folder named "<b>/uploads</b>" and make sure it's writable. This folder has to be a sibling of /application (meaning it should be on the same level).
+    					</li>
+    				</ul>
+    				
+    				<b>v1.4.1 to v1.4.2</b>
+    				
+    				<ul>
+    					<li>
+    						Update (overwrite) the following folders and files:<br>
+    						- /application/views/admin/db.php<br>
+    					</li>
+    				</ul>
+    				
+    				<b>v1.4.2 to v1.4.3</b>
+    				
+    				<ul>
+    					<li>
+    						Update (overwrite) the following folders and files:<br>
+    						- /application/views/table/table.php<br>
+    					</li>
+    				</ul>
+    			
+    			</div><!-- /#upgrading -->
+    			
+    			<br>
+    			
+    			<h3>Before Installing</h3>
+    			
+    			<div id="requirements">
+    			
+    				<h4>Requirements</h4>
+    				
+    				<p>
+    					To be able to install Databased, you must have the following:
+    				</p>
+    				
+    				<ul>
+    					<li>PHP 5.1.6 (older versions might work)</li>
+    					<li>Apache webserver</li>
+    					<li>MySQL with support for InnoDB tables and foreign keys</li>
+    					<li>Root access to your MySQL server</li>
+    					<li>phpMyAdmin access to setup the initial database</li>
+    					<li>An FTP tool to upload the files</li>
+    				</ul>
+    				
+    			</div><!-- /#requirement -->
+    			
+    			<div id="structure">
+    			
+    				<h3>Structure</h3>
+    				
+    				<p>
+    					Like mentioned before, Databased is built using CodeIgniter and Flat UI Pro. To learn more about CodeIgniter, please <a href="http://ellislab.com/codeigniter" target="_blank">visit the CodeIgniter website</a> or read the online documentation <a href="http://ellislab.com/codeigniter/user-guide/" target="_blank">here</a>. To learn more about Flat UI Pro, please have a look <a href="http://designmodo.com/flat/" target="_blank">here</a>.
+    				</p>
+    				
+    				<p>
+    					In addition to the default CodeIgniter files, Databased uses the following custom files:
+    				</p>
+    				
+    				<b>Controllers (/application/controllers/):</b><br>
+    				
+    				<ul>
+    					<li>account.php</li>
+    					<li>admin.php</li>
+    					<li>columnnotes.php</li>
+    					<li>columns.php</li>
+    					<li>dashboard.php</li>
+    					<li>db.php</li>
+    					<li>recordnotes.php</li>
+    					<li>revisions.php</li>
+    					<li>roles.php</li>
+    					<li>table_datasource.php</li>
+    					<li>tablenotes.php</li>
+    					<li>users.php</li>
+    				</ul>
+    				
+    				<b>Models (/application/models/):</b><br>
+    				
+    				<ul>
+    					<li>columnnote_model.php</li>
+    					<li>db_model.php</li>
+    					<li>issue_model.php</li>
+    					<li>recordnote_model.php</li>
+    					<li>relation_model.php</li>
+    					<li>revision_model.php</li>
+    					<li>role_model.php</li>
+    					<li>table_model.php</li>
+    					<li>tablenote_model.php</li>
+    					<li>user_model.php</li>
+    				</ul>	
+    				
+    				<b>Views (/application/views/)</b><br>
+    				
+    				<p>
+    					All files and folders are custom, except for the folder "/application/views/auth".
+    				</p>
+    				
+    				<b>Flat UI Pro files</b><br>
+    				
+    				<p>The following folders are part of the Flat UI Pro kit:</p>
+    				
+    				<ul>
+    					<li>/bootstrap (contains basic bootstrap items)</li>
+    					<li>/css (contains custom css)</li>
+    					<li>/custom (contains less+css)</li>
+    					<li>/fonts (contains the fonts used in Databased)</li>
+    					<li>/images (contains images used in Databased)</li>
+    					<li>/js (contains the Flat UI Pro javascript files)</li>
+    					<li>/less (contains the original Flat UI Pro less files)</li>
+    				</ul>
+    				
+    				<b>Additional files/folders</b><br>
+    				
+    				<ul>
+    					<li>/assets (contains some additional jQuery plugins + support files)</li>
+    					<li>/swf (contains files used by the jQuery DataTables plugin)</li>
+    				</ul>
+    				
+    			</div><!-- /#structure -->
+    			
+    			<div id="codeigniter">
+    			
+    				<h4>CodeIgniter</h4>
+    				
+    				<p>
+						Before continuing with the installation of Databased, please make sure your hosting is capable of hosting CodeIgniter 2.1.4. In 99% of the cases, this won't be a be a problem :)
+					</p>
+    			
+    			</div><!-- /#codeigniter -->
+    			
+    			<br>
+    			
+    			<h3>Installation</h3>
+    			
+    			<div id="upload">
+    			
+    				<h4>Step 1: Upload Files</h4>
+    				
+    				<p>
+    					You'll need to start with uploading the Databased files. You can either upload "Databased.zip" and unpack it on your hosting or unpack "Databased.zip" locally first and then upload the files. Unpacking the file "Databased.zip" will create a folder named "Databased" which contains all the application files.
+    				</p>
+    				
+    				<p>
+    					Databased can run either in the root folder of your hosting, or in a sub folder. After unpacking/uploading, please double check and make sure a file named ".htaccess" can be found in the folder to which you have uploaded the Databased files.
+    				</p>
+    			
+    			</div><!-- /#upload -->
+    			
+    			<div id="mysql">
+    			
+    				<h4>Step 2: Setup MySQL Database</h4>
+    				
+    				<p>
+    					Databased requires it's own MySQL database to function properly. Use phpMyAdmin or any other MySQL administration tool to create a new MySQL database. You can name this database whatever you like, but make sure you remember (or write it down) the name, as you'll need to put this into the configuration file later.
+    				</p>
+    				
+    				<p>
+    					Once you have created the MySQL database, import the SQL file named "Databased.sql". You can find this file in the "Databased" folder after unpacking the "Databased.zip" file. Importing the SQL file will create all the required tables in your new MySQL database. Please make sure you don't change anything in this database.
+    				</p>
+    			
+    			</div><!-- /#mysql -->
+    			
+    			<div id="configuration">
+    			
+    				<h4>Step 3: Configuration</h4>
+    				
+    				<p>
+    					The final step of the installation process is the configuration of Databased. Use your FTP tool to edit the following files as per the following instructions:
+    				</p>
+    				
+    				<b>/application/config/config.php</b><br>
+    				
+    				<p>
+    					Find the line <code>$config['support_email'] = 'support@somedomain.com';</code> (around line 365) and change the email address to the one you want to use for support issues. When users are presented with an error, in some cases this email address is presented as well so your users can contact you with issues they might have.
+    				</p>
+    				
+    				<p>
+    					The second item in the configuration file which needs to be set, can be found around line 227: <code>$config['encryption_key'] = 'SecretKeyGoesHere';</code>. You will need to set an encryption key, which could be any string of any number of characters (not setting an encryption key will result in the application not working properly).
+    				</p>
+    			
+    				<p>
+    					These are the only two required changes to "/application/config/config.php". There are other values you can change if you'd like (do so on your own risk though). To learn more about the config.php, please read through the CodeIgniter documentation <a href="http://ellislab.com/codeigniter/user-guide/index.html" target="_blank">here</a>.
+    				</p>
+    				
+    				<b>Removing the "index.php" from the URLS (pretty URLs)</b>
+    				
+    				<p>
+    					Edit the file <b>/application/config/config.php</b>, and remove the "index.php" value for the <code>$config['index_page']</code> variable (on line 29).
+    				</p>
+    				
+    				<p>
+    					Finally, make sure you have a usable ".htaccess" file in the root folder of your application (this file is provided with the application). 
+    				</p>
+    				
+    				<b>/application/config/database.php</b><br>
+    				
+    				<p>
+    					The last file you'll need to update is one above, in there you'll need to enter the correct details to connect to your database. Please note that the MySQL user used to connect to your database should have <b>ROOT</b> access.
+    				</p>
+    			
+    			</div><!-- /#configuration -->
+    			
+    			<div id="firstlogin">
+    			
+    				<h4>Your first login</h4>
+    				
+    				<p>
+    					After completing the installation instructions, you're now ready to login for the first time. Navigate your browser to your Databased install and use the following details to login:
+    				</p>
+    				
+    				<ul>
+    					<li><b>user</b>: admin@admin.com</li>
+    					<li><b>pass</b>: password</li>
+    				</ul>
+    				
+    				<p>
+    					These login details give Administrator access to your new Databased installation. A new installation is ALWAYS set to use the login details as per the above, so be sure to change both the username and password right away.
+    				</p>
+    			
+    			</div><!-- /#firstlogin -->
+    			
+    			<h3>Features</h3>
+    			
+    			<div id="databases">
+    			
+    				<h4>Databases</h4>
+    				
+    				<p>
+						Databased can be used to either manage existing databases or to create and manage new databases. Once you have installed Databased, it's not yet configured to manage any databases. 
+					</p>
+					
+					<p>
+						To enable existing databases or create a new one, navigate to the database section (click "Database" from the top menu and then click "Manage databases"). You will now see all databases on your MySQL server (or none if there aren't any databases created yet). When looking over the existing databases, you will either a green circle or a red circle inf front of each database. The green circle means the database meets the requirements and can be managed through Databased, a red circle means the database does not meet the requirements and can not be managed by Databased (please note that each table is required to have a primary key set on the first column).
+					</p>
+					
+					<p>
+						To enable a database, click the panel to open it up and check the check box. You'll see a confirmation message stating that this database is now available in Databased.
+					</p>
+					
+					<p>
+						To create a new database, click the second tab ("Create Database") and enter a name for your new database. Click the "Create database" button to create the database. When creating a new database, you can instantly enable the new database in Databased by checking the check box labeled "Enable in <b>Databased</b>".
+					</p>
+					
+					<p>
+						<b>PLEASE NOTE:</b> databases can only be managed by Users with administrator rights.
+					</p>
+					
+    			
+    			</div><!-- /#databases -->
+    			
+    			<div id="tables">
+    				
+    				<h4>Tables</h4>
+    				
+    				<p>	
+						When a user is logged into Databased, he or she will only be able to access the Tables to which his or her Role has access to. The available Tables are displayed trough tabs at the bottom of the screen when working on a database. If the user's Role is allowed to create Tables, he or she will also see a green button in the bottom left corner which will allow for the creation of new Tables.
+					</p>
+					
+					<p>	
+						When an Admin user creates a new Table, by default nobody on the system will have access to it until an Admin user gives the proper permissions to one or more Roles. 
+    				</p>
+    				
+    				<p>
+    					When a non-admin user creates a new Table, he or she can choose to keep the Table private (meaning only he or she and Admin users will be able to access it), share the table with other Users in his or her Role or share the table with all Users in the application.
+    				</p>
+    				
+    				<b>Private records</b><br>
+    				
+    				<p>
+    					Databased has the option to define certain tables as "private" for certain user roles. This will result in users with this role to only be able to access their <b>own</b> records within that table. This function allows for multiple users all using one and the same table but only being able to access their own records.
+    				</p>
+    				
+    			</div><!-- /#tables -->
+    			
+    			<div id="columns">
+    			
+    				<h4>Columns</h4>
+    				
+    				<p>
+    					At the time of this writing, Databased supports the following column types:
+    				</p>
+    				
+    				<ul>
+    					<li>Numbers (up to 11 digits)</li>
+    					<li>Small text (up to 255 characters)</li>
+    					<li>Big text</li>
+    					<li>Date</li>
+    					<li>Select (define several values from the user can choose one, will result in a select dropdown being displayed)</li>
+    				</ul>
+    				
+    				<b>Files and images</b><br><br>
+    				
+    				<p>
+    					<b>Databased</b> allows you to upload files/images and link these from within records/cells. To do this, edit a cell or record and check the checkbox labeled "Advanced editor (incl file uploads)". This will enable the advanced editor which allows you to create HTML and upload files/images using the toolbar.  
+    				</p>
+    				
+    				<b>Connections</b><br><br>
+    				
+    				<p>
+    					Columns can be connected to a second table. This would mean the column in question can only contain values that match the primary key of that second table. To make this more user-friendly, Databased can display values from a different column in that second table. 
+    				</p>
+    				
+    				<p>
+    					For example, let's say table one is called "customers" and table two is called "books". The "customers" table contains a column called "customerBook" which you would like to link to the "books" table. The "books" table's primary key column is named "books_id" and the table has another column named "books_title". Now, by linking the "customerBook" column from the first table to the "books" table, we're saying that that column can only contain values from the "books_id" column. To make it more user-friendly though, you can connect "customerBook" to "books > books_title" so that the application will display the "books_title" rather then primary key values.
+    				</p>
+    				
+    				<b>Restrictions</b><br><br>
+    				
+    				<p>
+    					Databased allows for a variety of restrictions which can be applied to columns to make sure data entered meets certain criteria. Currently, the following restrictions are supported:
+    				</p>
+    				
+    				<div class="table-responsive">
+    					<table class="table table-striped table-bordered">
+    						<thead>
+    							<tr>
+    								<th>Rule</th>
+    								<th>Description</th>
+    								<th>Example</th>
+    							</tr>
+    						</thead>
+    				    	<tbody>
+    				    		<tr>
+    				    			<td><b>required</b></td>
+    				    			<td>Returns FALSE if the form element is empty.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>min_length</b></td>
+    				    			<td>Returns FALSE if the form element is shorter then the parameter value.</td>
+    				    			<td>min_length[6]</td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>max_length</b></td>
+    				    			<td>Returns FALSE if the form element is longer then the parameter value.</td>
+    				    			<td>max_length[12]</td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>exact_length</b></td>
+    				    			<td>Returns FALSE if the form element is not exactly the parameter value.</td>
+    				    			<td>exact_length[8]</td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>greater_than</b></td>
+    				    			<td>Returns FALSE if the form element is less than the parameter value or not numeric.</td>
+    				    			<td>greater_than[8]</td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>less_than</b></td>
+    				    			<td>Returns FALSE if the form element is greater than the parameter value or not numeric.</td>
+    				    			<td>less_than[8]</td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>alpha</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than alphabetical characters.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>alpha_numeric</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than alpha-numeric characters.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>alpha_dash</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than alpha-numeric characters, underscores or dashes.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>numeric</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than numeric characters.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>integer</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than an integer.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>is_natural</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than a natural number: 0, 1, 2, 3, etc.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>is_natural_no_zero</b></td>
+    				    			<td>Returns FALSE if the form element contains anything other than a natural number, but not zero: 1, 2, 3, etc.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>valid_email</b></td>
+    				    			<td>Returns FALSE if the form element does not contain a valid email address.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>valid_emails</b></td>
+    				    			<td>Returns FALSE if any value provided in a comma separated list is not a valid email.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    		<tr>
+    				    			<td><b>valid_ip</b></td>
+    				    			<td>Returns FALSE if the supplied IP is not valid. Accepts an optional parameter of "IPv4" or "IPv6" to specify an IP format.</td>
+    				    			<td></td>
+    				    		</tr>
+    				    	</tbody>
+    				  </table>
+    				</div>
+    				<br>
+    				
+    			</div><!-- /#columns -->
+    			
+    			<div id="imports">
+    				
+    				<h4>Importing data into Databased</h4>
+    				
+    				<p>
+    					At the moment of this writing, Databased supports importing of CSV (comma/character separated values) files only. If you have Excel sheets you'd like to import into Databased, you should export these as CSV files from Excel first after which you can import the data into Databased.
+    				</p>
+    				
+    				<p>
+    					When importing data, you can either use this data to build an entire new table, or to add data to an existing table.
+    				</p>
+    				
+    				<b>Importing data into a new table</b><br>
+    				
+    				<p>
+    					To create a new table using an imported CSV file, click the green button with the white "+" in front of your table tabs at the bottom of the window (in the bottom left corner). If you're not seeing this button, this means you don't have permission to create new tables and you should contact the application's administrator.
+    				</p>
+    				
+    				<p>
+    					After clicking the button, open up the second tab labeled "<b>Import data</b>". You should start off by entering a name for your new table (make sure this name contains only alpha numeric characters: a-z, 1-9, underscored and dashes, NO SPACES!). Next, you should choose the file you'd like to import.
+    				</p>
+    				
+    				<p>
+    					When importing a CSV file, it's possible that your file contains the column names on the first line of the file, if this is the case, make sure you tick the check box labeled "First row contains column names", this way Databased will use those column names to create your new table.
+    				</p>
+    				
+    				<p>
+    					There two additional advanced settings available: the column delimiter and the column enclosure characters. Under normal circumstances, you don't need to change these settings, as Databased will auto-detect both. Only if you're having issues importing the data and your table is not built properly, you can try altering these settings. Be sure to investigate the structure of your CSV file before changing these settings.
+    				</p>
+    				
+    				<p>
+    					<b>Please note:</b> since Databased requires all tables to have a primary key set, it will add a primary key column to your imported data as well. It will first detect wether the first column contains unique values, if it does, Databased will set this column as the primary key. If the first column does not contain unique values, Databased will add an additional column to your table which will function as the primary key (which will be set to auto increment).
+    				</p>
+    				
+    				<b>Importing data into an existing table</b>
+    				
+    				<p>
+    					The second way to use the data import function is by importing data into an existing table. To do this, bring up the table into which you'd like to import data. Next, the click the grey button labeled "Import data" which will bring up a popup. In this popup you can choose you're CSV file and upload it.
+    				</p>
+    				
+    				<p>
+    					<b>Please note</b>: when importing data into an existing table, it's trivial to make sure the structure of your CSV files matches with the structure of your table! If you have 10 columns in your table, you'll need to have 10 values per row in your CSV file. If the structures don't match, the import will probably fail and Databased will show you an error message.
+    				</p>
+    				
+    				<p>
+    					When importing data into an existing table, you'll have the same two advanced settings available as when importing data into a new table: the column delimiter and the value enclosure character. 
+    				</p>
+    			
+    			</div>
+    			
+    			<div id="roles-users-permissions">
+    			
+    				<h4>Roles, Users and Permissions</h4>
+    				
+    				<p>
+    					Databased is built with user roles in mind. This means that you define a certain role (for example Sales Rep, Customer Service or Accounting) and setup permissions for this Role. Next, you assign a Role to a user account which will determine what the user can or can not do.
+    				</p>
+    				
+    				<p>
+    					Databased uses a combination of MySQL's implementation of user accounts and permissions and Databased's own user system. Each user account created in Databased is connected with a MySQL user, this is done to make sure users can only do what they're allowed and to keep the application and database safe from misuse. 
+    				</p>
+    				
+    				<p>
+    					For each Role, permissions are set on a database level AND on a table level; meaning different databases and different tables can have different permissions.
+    				</p>
+    				
+    				<p>
+    					When a new user account is created, Databased will automatically send an notification email to the user's email address with the login details.
+    				</p>
+    				
+    				<p>
+    					Users and Roles can be managed by users belonging to the Administration group or users who have been assigned the permission to manage Users and Roles by a Administrator.
+    				</p>
+    				
+    				<p>
+    					Databased comes with built-in password recovery as well. If you or another user forgot his or her password, simply click the "Forgot your password?" link on the login page. This will send out an email with a link to the password reset page on which a new password can be created.
+    				</p>
+    				 
+    				<p>
+    					<b>Administrators</b><br>
+    					Please note that by default, Databased has one user (with user id "1") and one group ("Administrator" group). This role can not be modified to make sure admins can always access the application. The original Admin User could theoretically be deleted, however if there aren't any other admin users when the original admin is deleted, no one will be able to manage the application anymore. Furthermore, be sure NOT to alter the group id of the Administrator group as this might stop Databased from functioning properly.
+    				</p>
+    			
+    			</div><!-- /#roles-users-permissions -->
+    			
+    			<div id="revisions">
+    			
+    				<h4>Revisions</h4>
+    				
+    				<p>
+    					Databased automatically stores old values of records and individual cells which can be restored at any given moment. When a cell or record is updated, the previous values are stored and can be accessed through the "Revisions" tab.
+    				</p>
+    				
+    				<p>
+    					Both the Cell and Record popups have the Revisions tab, allowing to restore single cells or entire records.
+    				</p>
+    				
+    				<p>
+    					At the moment, there is no expiration date set for Revisions, meaning all revisions are stored indefinitely. You can however, remove Revisions manually for any Cell or Record. 
+    				</p>
+    			
+    			</div><!-- /#revisions -->
+    			
+    			<div id="relationaldata">
+    			
+    				<h4>Relational Data</h4>
+    				
+    				<p>
+    					Databased allows for a column in a certain table to be connected to a second table, which means that the first column will hold value from the second table (please not that this functionality is only available for InnoDB tables, when different tables are used, this functionality will be automatically hidden). 
+    				</p>
+    				
+    				<p>
+    					Foreign keys will have to be declared within the application before Databased will be able to use them. When setting up existing databases, you will need to re-declare these foreign keys so that they become available in the application.
+    				</p>
+    				
+    				<p>
+    					To setup a foreign key on a column, you will need to have permissions to modify tables in the database.
+    				</p>
+    				
+    				<p>
+    					Once declared properly, Databased will automatically present a dropdown box displaying the allowed options when editing a single Cell or Record.
+    				</p>
+    			
+    			</div><!-- /#relationaldata -->
+    			
+    			<div id="notes">
+    			
+    				<h4>Notes</h4>
+    				
+    				<p>
+    					Databased allows users to attach notes to Columns, Tables and Databases. These notes can serve to describe what certain items are for and how certain items should be used.
+    				</p>
+    				
+    				<p>
+    					When looking a table screen, you'll find a tab named "Notes". In here, notes for the current table can be created, edited or deleted.
+    				</p>
+    				
+    				<p>
+    					When editing a column or Cell, notes can be attached to the Column through the "Notes" tab in the popup.
+    				</p>
+    				
+    				<p>
+    					When editing a Record, notes can be created, edited and deleted through the "Notes" tab.
+    				</p>
+    				
+    				<p>
+    					Notes can be created by ANY user, no matter what permission this user has. Administrators can edit and delete other users notes as well as their own.
+    				</p>
+    			
+    			</div><!-- /#notes -->
+    			
+    			<h3>How do I...?</h3>
+    			<br>
+    			
+    			<div id="hdi">
+    			
+    				<h4>Enable an existing database in Databased</h4>
+    				
+    				<ol>
+    					<li>Make sure you have Administration rights</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose "Manage databases"</li>
+    					<li>Locate the database you wish to enable and make sure it has a GREEN circle in front of the name (note that if you'll see a red circle instead, this database can not be enabled in Databased)</li>
+    					<li>Click the panel to open it up</li>
+    					<li>Check the check box labeled "Enable database in Databased"</li>
+    				</ol>
+    				<br>
+    			
+    				<h4>Create a new database in Databased</h4>
+    				
+    				<ol>
+    					<li>Make sure you have Administration rights</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose "Manage databases"</li>
+    					<li>Click on the tab labeled "Create Database"</li>
+    					<li>Enter a name for the new database</li>
+    					<li>Check the check box labeled "Enable in Databased" if you want to enable the database</li>
+    					<li>Click the "Create database" button</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>Add a table to a database</h4>
+    				
+    				<ol>
+    					<li>Make sure you have permission to modify the database in question</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose the database you want to work on</li>
+    					<li>Look towards the bottom left corner and look for a green button with a white + sign in it. Click this button</li>
+    					<li>Enter a name for the new table and create the desired columns</li>
+    					<li>When ready, click the button labeled "Add table" to create the new table</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>Setup a foreign key on a column</h4>
+    				
+    				<ol>
+    					<li>Make sure you have permission to modify the table in question</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose the database you want to work on</li>
+    					<li>Navigate to the table you want to work on using the tabs at the bottom of the page</li>
+    					<li>Click on the second tab (labeled "Table columns")</li>
+    					<li>Find the column you want to create the foreign key for and click the "edit" button for this column</li>
+    					<li>In the popup, find the section labeled "Connect to" and choose the "table > column" you want this column to link to</li>
+    					<li>Click the button labeled "Update column"</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>Customise the data view</h4>
+    				
+    				<ol>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose the database you want to work on</li>
+    					<li>Navigate to the table you want to work on using the tabs at the bottom of the page</li>
+    					<li>Click on the second tab (labeled "Table columns")</li>
+    					<li>Use the checkboxes on the left of each column to control which columns appear in the data view and which don't</li>
+    					<li>When you're ready, click the grey button labeled "Reload data view"</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>Rename a table</h4>
+    				
+    				<ol>
+    					<li>Make sure you have permission to modify the table in question</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose the database you want to work on</li>
+    					<li>Navigate to the table you want to work on using the tabs at the bottom of the page</li>
+    					<li>Click on the tab labeled "More"</li>
+    					<li>Type the new name into the name field</li>
+    					<li>Click the button labeled "Update table"</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>Change a user's details</h4>
+    				
+    				<ol>
+    					<li>Make sure you have Admin permissions or are allowed to manage Users and Roles</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Click on "Users" in the top menu</li>
+    					<li>Select the user from the left menu</li>
+    					<li>Make the desired changes</li>
+    					<li>Click the green update button</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>Change a user's permissions</h4>
+    				
+    				<p>
+    					To change a user's permissions, you will need to alter the permissions of the role assigned to the User question. Please note that when updating a Role, these changes will affect all Users with that same Role.
+    				</p>
+    				
+    				<p>
+    					To update a Role's permissions:
+    				</p>
+    				
+    				<ol>
+    					<li>Make sure you have Admin permissions or are allowed to manage Users and Roles</li>
+    					<li>Log into the application using your username and password</li>
+    					<li>Click "Roles & Permissions" from the top menu</li>
+    					<li>Select the Role from the left menu</li>
+    					<li>You will be able to set permissions on each database and table</li>
+    					<li>Click the button labeled "Save Permissions"</li>
+    				</ol>
+    				<br>
+    				
+    				<h4>How do I export data from Databased?</h4>
+    				
+    				<p>
+    					Please note that in order to export data from Databased, your browser will need to have Flash installed.
+    				</p>
+    				
+    				<ul>
+    					<li>Log into the application using your username and password</li>
+    					<li>Open the Database drop down from the top menu and choose the database you want to export data from</li>
+    					<li>Navigate to the table you want to export data from using the tabs at the bottom of the page</li>
+    					<li>Use the search bar filter in the top right corner to load the records you'd like to export</li>
+    					<li>Click one of the CSV/Excel/PDF buttons to choose your download format and your download will begin</li>
+    				</ul>
+    			
+    			</div><!-- /#hdi -->
+    		
+    		</div><!-- /.col-md-9 -->
+    	
+    	</div>
+    	
+    </div><!-- /.container -->
+
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script>
+    $(function(){
+    
+    	$('#docNav a').click(function(){
+    	
+    		$('#docNav li').removeClass('active');
+    		
+    		$(this).parent().addClass('active');
+    	
+    	})
+    
+    })
+    </script>
+  </body>
+</html>

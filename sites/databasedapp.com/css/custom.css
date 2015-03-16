@@ -1,0 +1,44 @@
+/* ===== START YOUR CUSTOMIZATIONS HERE ===== */
+
+a:focus {
+	outline: none;
+}
+
+.main-nav li a > span.label {
+	font-size: 14px;
+	font-weight: normal;
+	padding: 5px 10px;
+}
+
+.carousel.bordered .item img {
+	border: 2px solid #ddd;
+}
+
+.tooldummy {
+	height: 80px;
+	width: 100px;
+}
+
+.tooldummy p {
+	height: 0px;
+}
+
+.tooldummy .tooltip {
+	left: -8px !important;
+	position: relative !important;
+	top: -50px !important;
+}
+
+#hero .intro {
+	padding-top: 50px;
+}
+
+.navbar-fixed-top {
+	z-index: 5000;
+}
+
+.tooltip-light .tooltip-inner {
+	font-weight: bold;
+	line-height: 1.6em;
+	text-align: left;
+}

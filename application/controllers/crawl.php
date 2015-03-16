@@ -6,12 +6,9 @@ class Crawl extends CI_Controller {
 	{
 		parent::__construct();
 		
-		$this->load->helper('htmldom');
-		$this->load->model('ancormodel');
-		$this->load->model('scriptmodel');
-		$this->load->model('stylesheetmodel');
-		$this->load->model('filemodel');
-		$this->load->model('imagemodel');
+		$this->load->lirbary('crawler');
+		
+		
 		$this->load->database();
 				
 	}
@@ -157,7 +154,7 @@ class Crawl extends CI_Controller {
 			flush();
 			
 			//recursion baby!
-			$query = $this->db->from('ancors')->where('ancor_crawled', '0')->get();
+			//$query = $this->db->from('ancors')->where('ancor_crawled', '0')->get();
 			
 			$counter++;
 		
@@ -198,7 +195,7 @@ class Crawl extends CI_Controller {
 			
 			
 			//recursion baby!
-			$query = $this->db->from('scripts')->where('script_crawled', '0')->get();
+			//$query = $this->db->from('scripts')->where('script_crawled', '0')->get();
 			
 			$counter++;
 		
@@ -284,7 +281,7 @@ class Crawl extends CI_Controller {
 			
 			
 			//recursion baby!
-			$q = $this->db->from('stylesheets')->where('stylesheet_crawled', '0')->get();
+			//$q = $this->db->from('stylesheets')->where('stylesheet_crawled', '0')->get();
 			
 			$counter++;
 		
@@ -324,7 +321,7 @@ class Crawl extends CI_Controller {
 			
 			
 			//recursion baby!
-			$q = $this->db->from('images')->where('image_crawled', '0')->get();
+			//$q = $this->db->from('images')->where('image_crawled', '0')->get();
 			
 			$counter++;
 		

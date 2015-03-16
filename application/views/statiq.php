@@ -68,8 +68,8 @@
     <script src="/js/application.js"></script>
     <script>
     $(function(){
-    
-    	/*$.ajax({
+		    
+    	$.ajax({
     		type: "POST",
     		dataType: "json",
     	  	url: "/statiq/startCrawl/<?php echo $siteID?>"
@@ -79,7 +79,7 @@
     		
     		$('#content').append( $(data.content) )
     	
-    	})*/
+    	})
     
     })
     </script>
